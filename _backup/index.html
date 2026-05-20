@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satugama — Game Asset Maker & Creator Studio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Satugama adalah platform pembuat aset game berkualitas tinggi untuk pengembang game indie. Kustomisasi karakter, unduh aset 2D/3D, dan buat game impian Anda.">
+  <meta name="keywords" content="game asset maker, satugama, game dev, 2d asset, 3d asset, pixel art, last signal, technopreneurship polines">
+  <meta name="author" content="Satugama Team">
+  
+  <!-- Favicon placeholder (gaming controller icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Decorative Glow Backgrounds -->
+  <div class="bg-glow glow-purple"></div>
+  <div class="bg-glow glow-cyan"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">S</div>
+        SATU<span>GAMA</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#customizer">Kustomisasi</a></li>
+          <li><a href="#projects">Katalog</a></li>
+          <li><a href="#team">Tim Kami</a></li>
+          <li><a href="#pricing">Harga</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#customizer" class="btn-cta">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Mulai Buat
+        </a>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Wujudkan Game Impian dengan <span class="gradient-text">Aset Premium</span></h1>
+        <p>Satugama adalah studio game asset maker inovatif yang didirikan oleh tim kreatif mahasiswa Politeknik Negeri Semarang. Kami menyediakan aset 2D, 3D, UI/UX, dan audio berkualitas tinggi untuk mempercepat proses pengembangan game Anda.</p>
+        <div class="hero-actions">
+          <a href="#customizer" class="btn-cta">
+            Coba Customizer <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#projects" class="btn-secondary">Lihat Portofolio</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>26+</h3>
+            <p>Project Aset</p>
+          </div>
+          <div class="stat-item">
+            <h3>5</h3>
+            <p>Expert Creators</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Original Aset</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="visual-backdrop"></div>
+        <div class="visual-image">
+          <!-- Animated Cyberpunk Game Scene in SVG -->
+          <svg viewBox="0 0 400 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#0f0729" />
+                <stop offset="100%" stop-color="#240c47" />
+              </linearGradient>
+              <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.1" />
+                <stop offset="100%" stop-color="#bd00ff" stop-opacity="0.8" />
+              </linearGradient>
+            </defs>
+            <!-- Background Sky -->
+            <rect width="400" height="400" fill="url(#skyGrad)" />
+            
+            <!-- Neon Moon -->
+            <circle cx="200" cy="150" r="70" fill="none" stroke="#ff007a" stroke-width="4" stroke-dasharray="10 5" />
+            <circle cx="200" cy="150" r="65" fill="#1b0c36" />
+            
+            <!-- Synthwave Grid (perspective lines) -->
+            <path d="M 200,200 L 0,400 M 200,200 L 80,400 M 200,200 L 160,400 M 200,200 L 240,400 M 200,200 L 320,400 M 200,200 L 400,400" stroke="#00f0ff" stroke-width="1.5" opacity="0.4" />
+            <path d="M 0,280 H 400 M 0,310 H 400 M 0,345 H 400 M 0,385 H 400" stroke="#00f0ff" stroke-width="1" opacity="0.3" />
+            
+            <!-- City Silhouette -->
+            <path d="M 0,220 V 170 H 40 V 190 H 80 V 150 H 120 V 180 H 150 V 130 H 210 V 190 H 250 V 160 H 300 V 185 H 340 V 150 H 400 V 220 Z" fill="#080312" opacity="0.9" />
+            <!-- City Windows Glowing -->
+            <rect x="90" y="160" width="6" height="10" fill="#00f0ff" opacity="0.7" />
+            <rect x="100" y="175" width="6" height="10" fill="#ff007a" opacity="0.7" />
+            <rect x="170" y="140" width="8" height="15" fill="#ffc700" opacity="0.6" />
+            <rect x="190" y="150" width="8" height="15" fill="#00f0ff" opacity="0.7" />
+            <rect x="360" y="170" width="10" height="10" fill="#ff007a" opacity="0.8" />
+            
+            <!-- Glitchy Mountain Wireframes -->
+            <polygon points="0,220 100,120 180,220" fill="none" stroke="#bd00ff" stroke-width="2" opacity="0.8" />
+            <polygon points="120,220 250,90 350,220" fill="none" stroke="#ff007a" stroke-width="2" opacity="0.7" />
+            
+            <!-- Center Glowing Game Logo Icon -->
+            <g transform="translate(160, 210)">
+              <rect x="0" y="0" width="80" height="80" rx="15" fill="rgba(8,5,18,0.7)" stroke="#00f0ff" stroke-width="2" />
+              <text x="40" y="52" font-family="'Outfit', sans-serif" font-weight="900" font-size="36" fill="#f3f1f7" text-anchor="middle" letter-spacing="1">
+                🎮
+              </text>
+              <!-- Glitch overlay lines -->
+              <line x1="10" y1="25" x2="70" y2="25" stroke="#ff007a" stroke-width="2" opacity="0.8" />
+              <line x1="5" y1="55" x2="65" y2="55" stroke="#00f0ff" stroke-width="2" opacity="0.8" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Mengapa Memilih Kami</span>
+        <h2 class="section-title">Solusi Kebutuhan Aset Game</h2>
+        <p class="section-desc">Satugama hadir untuk membantu pengembang indie melompati bottleneck produksi seni game melalui alur kerja yang mudah, fleksibel, dan sangat terjangkau.</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <h3>Didesain untuk Game Dev</h3>
+          <p>Seluruh aset kami dirancang agar siap pakai untuk engine populer seperti Unity, Godot, dan Unreal Engine dengan struktur folder yang rapi.</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3>Interactive Customizer</h3>
+          <p>Kustomisasi langsung aset Anda melalui editor web kami sebelum diunduh. Sesuaikan warna, pakaian, senjata, dan gaya agar cocok dengan tema game.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Lisensi Komersial Aman</h3>
+          <p>Gunakan aset kami pada game gratis maupun komersial dengan lisensi yang jelas, tanpa biaya royalti tambahan tersembunyi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Customizer Section -->
+  <section id="customizer" class="customizer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Demo Interaktif</span>
+        <h2 class="section-title">Character Sprite Customizer</h2>
+        <p class="section-desc">Eksperimen langsung dengan salah satu ide startup utama kami. Sesuaikan sprite karakter RPG retro, ubah perlengkapan mereka, dan lihat pembaruan instan.</p>
+      </div>
+      
+      <div class="customizer-layout">
+        <!-- Left Side: Preview -->
+        <div class="preview-container">
+          <div class="preview-glow"></div>
+          
+          <!-- Character Sprite Layered SVG -->
+          <svg class="character-sprite-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="char-svg">
+            <!-- BACKGROUND SHADOW -->
+            <ellipse cx="50" cy="85" rx="20" ry="5" fill="#030206" opacity="0.4" />
+            
+            <!-- BODY BASE LAYER -->
+            <g id="layer-body">
+              <!-- Head / Skin (Green Goblin or Human Tan) -->
+              <rect x="42" y="25" width="16" height="16" rx="4" id="char-skin" fill="#ffdbac" />
+              <!-- Eyes -->
+              <rect x="46" y="31" width="2" height="3" fill="#333" />
+              <rect x="52" y="31" width="2" height="3" fill="#333" />
+              <!-- Mouth -->
+              <rect x="49" y="37" width="2" height="1" fill="#ffabab" />
+              <!-- Body Torso base -->
+              <rect x="40" y="41" width="20" height="24" rx="4" fill="#333" />
+              <!-- Legs & Feet -->
+              <rect x="43" y="65" width="4" height="15" fill="#222" />
+              <rect x="53" y="65" width="4" height="15" fill="#222" />
+              <rect x="41" y="78" width="6" height="4" rx="1" fill="#111" />
+              <rect x="53" y="78" width="6" height="4" rx="1" fill="#111" />
+            </g>
+            
+            <!-- CLOTHES / ARMOR LAYER -->
+            <g id="layer-armor">
+              <!-- Armor Torso Plate (Toggled by selector) -->
+              <path d="M40,41 h20 v20 r2 h-20 z" id="armor-chest" fill="#708090" />
+              <path d="M43,45 h14 v12 h-14 z" fill="#8a9a9a" opacity="0.5" />
+              <!-- Shoulder pads -->
+              <rect x="36" y="41" width="5" height="5" rx="1" id="armor-shoulder-l" fill="#506070" />
+              <rect x="59" y="41" width="5" height="5" rx="1" id="armor-shoulder-r" fill="#506070" />
+            </g>
+            
+            <!-- HAIR / HELMET LAYER -->
+            <g id="layer-hair">
+              <!-- Hair Path - Warrior spikes (default) -->
+              <path d="M39,26 L42,16 L45,26 L48,15 L52,26 L55,16 L58,26 L61,20 L58,28 H40 Z" id="hair-style" fill="#ffcc00" />
+            </g>
+            
+            <!-- WEAPON LAYER -->
+            <g id="layer-weapon">
+              <!-- Right hand weapon: Sword (default) -->
+              <g id="weapon-sword" transform="translate(63, 30)">
+                <!-- Blade -->
+                <rect x="0" y="0" width="4" height="25" rx="1" fill="#e5e5e5" stroke="#ccc" stroke-width="0.5" />
+                <rect x="1" y="2" width="2" height="20" fill="#00f0ff" opacity="0.7" /> <!-- Neon Glow Blade center -->
+                <!-- Guard -->
+                <rect x="-3" y="25" width="10" height="3" rx="1" fill="#ffd700" />
+                <!-- Hilt -->
+                <rect x="1" y="28" width="2" height="6" fill="#8b4513" />
+                <circle cx="2" cy="35" r="1.5" fill="#ffd700" />
+              </g>
+              <!-- Bow Weapon (hidden by default) -->
+              <g id="weapon-bow" transform="translate(62, 38)" style="display: none;">
+                <!-- Bow string -->
+                <line x1="0" y1="-15" x2="0" y2="25" stroke="#eee" stroke-width="0.5" stroke-dasharray="2 1" />
+                <!-- Bow Wood -->
+                <path d="M0,-15 C15,-5 15,15 0,25" fill="none" stroke="#8b4513" stroke-width="2.5" stroke-linecap="round" />
+                <!-- Grip -->
+                <rect x="4" y="2" width="3" height="6" rx="1" fill="#ff007a" />
+              </g>
+              <!-- Wizard Staff Weapon (hidden by default) -->
+              <g id="weapon-staff" transform="translate(63, 26)" style="display: none;">
+                <!-- Wooden Shaft -->
+                <rect x="1" y="10" width="2.5" height="42" rx="1" fill="#5c4033" />
+                <!-- Gold Mount -->
+                <path d="M-1,5 h6.5 v6 h-6.5 z" fill="#ffd700" />
+                <!-- Glowing Crystal -->
+                <polygon points="2, -4 -2, 4 2, 8 6, 4" fill="#bd00ff" stroke="#ff007a" stroke-width="0.5" />
+                <!-- Orbiting magic particles -->
+                <circle cx="-3" cy="-1" r="1" fill="#00f0ff" />
+                <circle cx="7" cy="6" r="1" fill="#00f0ff" />
+              </g>
+            </g>
+            
+            <!-- ACCESSORY LAYER (Shield on Left Hand) -->
+            <g id="layer-accessory">
+              <g id="accessory-shield" transform="translate(25, 48)">
+                <path d="M0,0 H12 V8 C12,15 6,19 6,19 C6,19 0,15 0,8 Z" fill="#b0c4de" stroke="#708090" stroke-width="1" />
+                <path d="M2,2 H10 V7 C10,12 6,15 6,15 C6,15 2,12 2,7 Z" fill="#ff007a" opacity="0.8" id="shield-color" />
+                <!-- Shield Emblem -->
+                <polygon points="6,4 4,8 8,8" fill="#ffd700" />
+              </g>
+              <g id="accessory-cape" style="display: none;">
+                <!-- Cape behind body -->
+                <!-- We insert cape behind body layers using JS dynamically, or draw here but we put it in the background group. -->
+              </g>
+            </g>
+          </svg>
+          
+          <div class="preview-actions">
+            <button class="btn-secondary" id="btn-randomize"><i class="fa-solid fa-dice"></i> Acak</button>
+            <button class="btn-cta" id="btn-download-svg"><i class="fa-solid fa-download"></i> Unduh SVG</button>
+          </div>
+        </div>
+        
+        <!-- Right Side: Controls -->
+        <div class="customizer-controls">
+          <!-- Character Class -->
+          <div class="control-group">
+            <span class="control-label">Gaya Karakter</span>
+            <div class="options-grid">
+              <button class="option-btn active" data-type="class" data-value="warrior">Warrior</button>
+              <button class="option-btn" data-type="class" data-value="mage">Mage</button>
+              <button class="option-btn" data-type="class" data-value="ranger">Ranger</button>
+              <button class="option-btn" data-type="class" data-value="cyber">Cyber</button>
+            </div>
+          </div>
+          
+          <!-- Weapon Selection -->
+          <div class="control-group">
+            <span class="control-label">Senjata</span>
+            <div class="options-grid">
+              <button class="option-btn active" data-type="weapon" data-value="sword">Pedang</button>
+              <button class="option-btn" data-type="weapon" data-value="staff">Tongkat</button>
+              <button class="option-btn" data-type="weapon" data-value="bow">Busur</button>
+              <button class="option-btn" data-type="weapon" data-value="none">Fists</button>
+            </div>
+          </div>
+          
+          <!-- Accessory Selection -->
+          <div class="control-group">
+            <span class="control-label">Perisai & Aksesoris</span>
+            <div class="options-grid">
+              <button class="option-btn active" data-type="acc" data-value="shield">Perisai</button>
+              <button class="option-btn" data-type="acc" data-value="cape">Jubah</button>
+              <button class="option-btn" data-type="acc" data-value="both">Keduanya</button>
+              <button class="option-btn" data-type="acc" data-value="none">Polos</button>
+            </div>
+          </div>
+          
+          <!-- Primary Color (Hair/Armor Highlight) -->
+          <div class="control-group">
+            <span class="control-label">Warna Utama Aset</span>
+            <div class="color-options" id="color-primary-options">
+              <div class="color-dot active" style="background-color: #ffd700;" data-color="#ffd700"></div> <!-- Gold -->
+              <div class="color-dot" style="background-color: #ff007a;" data-color="#ff007a"></div> <!-- Pink -->
+              <div class="color-dot" style="background-color: #00f0ff;" data-color="#00f0ff"></div> <!-- Cyan -->
+              <div class="color-dot" style="background-color: #bd00ff;" data-color="#bd00ff"></div> <!-- Violet -->
+              <div class="color-dot" style="background-color: #4caf50;" data-color="#4caf50"></div> <!-- Green -->
+            </div>
+          </div>
+          
+          <!-- Armor Style/Material -->
+          <div class="control-group">
+            <span class="control-label">Bahan Armor</span>
+            <div class="options-grid">
+              <button class="option-btn active" data-type="armor" data-value="iron">Besi</button>
+              <button class="option-btn" data-type="armor" data-value="gold">Emas</button>
+              <button class="option-btn" data-type="armor" data-value="cloth">Kain</button>
+              <button class="option-btn" data-type="armor" data-value="obsidian">Obsidian</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase / Portfolio Section -->
+  <section id="projects" class="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Katalog Karya</span>
+        <h2 class="section-title">Portofolio & Aset Pack</h2>
+        <p class="section-desc">Kumpulan paket aset game yang telah kami rilis, termasuk aset khusus dari game andalan kami, Last Signal.</p>
+      </div>
+      
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Semua Aset</button>
+        <button class="filter-btn" data-filter="2d">2D & Pixel Art</button>
+        <button class="filter-btn" data-filter="3d">3D Model</button>
+        <button class="filter-btn" data-filter="ui">UI Kit & Audio</button>
+      </div>
+      
+      <div class="gallery-grid">
+        <!-- Project 1 (Last Signal Glitch Pack) -->
+        <div class="gallery-card" data-category="ui">
+          <div class="card-img-container">
+            <svg width="100%" height="100%" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="200" fill="#1b1236" />
+              <g transform="translate(10, 10)">
+                <text x="140" y="80" fill="#ff007a" font-size="28" font-family="'Outfit'" font-weight="900" text-anchor="middle">LAST SIGNAL</text>
+                <text x="140" y="110" fill="#00f0ff" font-size="16" font-family="'JetBrains Mono'" text-anchor="middle">GLITCH ASSET PACK</text>
+                <line x1="20" y1="125" x2="260" y2="125" stroke="#bd00ff" stroke-width="2" />
+                <rect x="80" y="140" width="120" height="20" rx="5" fill="rgba(0,240,255,0.1)" stroke="#00f0ff" />
+                <text x="140" y="154" fill="#00f0ff" font-size="10" font-family="'JetBrains Mono'" text-anchor="middle">8-BIT / UI / SFX</text>
+              </g>
+            </svg>
+            <span class="card-tag">UI & Audio</span>
+          </div>
+          <div class="card-info">
+            <h3>Last Signal Glitch Pack</h3>
+            <p>UI kit futuristik lengkap dengan efek glitch, ikon sci-fi retro, dan efek suara (SFX) sintetis yang kacau untuk game party multiplayer.</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 149.000</span>
+              <a href="#contact" class="btn-card">Pesan Sekarang <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (2D Retro Dungeon Tileset) -->
+        <div class="gallery-card" data-category="2d">
+          <div class="card-img-container">
+            <svg width="100%" height="100%" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="200" fill="#111" />
+              <!-- Draw pixel grid walls -->
+              <g stroke="#333" stroke-width="1">
+                <line x1="0" y1="50" x2="300" y2="50" />
+                <line x1="0" y1="100" x2="300" y2="100" />
+                <line x1="0" y1="150" x2="300" y2="150" />
+                <line x1="50" y1="0" x2="50" y2="200" />
+                <line x1="100" y1="0" x2="100" y2="200" />
+                <line x1="150" y1="0" x2="150" y2="200" />
+                <line x1="200" y1="0" x2="200" y2="200" />
+                <line x1="250" y1="0" x2="250" y2="200" />
+              </g>
+              <!-- Pixel Art Dungeon chest -->
+              <g transform="translate(125, 75)">
+                <rect x="0" y="10" width="50" height="35" rx="3" fill="#8b4513" stroke="#ffd700" stroke-width="2" />
+                <rect x="0" y="5" width="50" height="12" rx="3" fill="#a0522d" stroke="#ffd700" stroke-width="2" />
+                <rect x="22" y="12" width="6" height="10" rx="1" fill="#ffd700" />
+                <circle cx="25" cy="17" r="1.5" fill="#111" />
+                <!-- Sparkle -->
+                <polygon points="10,0 12,-4 14,0 18,2 14,4 12,8 10,4 6,2" fill="#00f0ff" />
+                <polygon points="40,25 41,22 42,25 45,26 42,27 41,30 40,27 37,26" fill="#ffd700" />
+              </g>
+            </svg>
+            <span class="card-tag">Pixel Art</span>
+          </div>
+          <div class="card-info">
+            <h3>Retro Dungeon 16-Bit Tileset</h3>
+            <p>Paket tileset 2D lengkap bertema kastil gelap. Termasuk sprite dinding, pintu jebakan, peti harta karun beranimasi, dan rintangan mematikan.</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 99.000</span>
+              <a href="#contact" class="btn-card">Pesan Sekarang <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 (Low Poly Sci-Fi Vehicles) -->
+        <div class="gallery-card" data-category="3d">
+          <div class="card-img-container">
+            <svg width="100%" height="100%" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="200" fill="#0c1b2b" />
+              <!-- Wireframe Spaceship -->
+              <g stroke="#00f0ff" stroke-width="1.5" fill="none">
+                <polygon points="150,40 100,140 150,120" />
+                <polygon points="150,40 200,140 150,120" />
+                <polygon points="100,140 50,160 100,150" />
+                <polygon points="200,140 250,160 200,150" />
+                <line x1="150" y1="120" x2="150" y2="170" />
+                <!-- Engine fire (neon pink) -->
+                <polygon points="145,170 150,195 155,170" stroke="#ff007a" fill="rgba(255,0,122,0.3)" />
+              </g>
+            </svg>
+            <span class="card-tag">3D Models</span>
+          </div>
+          <div class="card-info">
+            <h3>Low-Poly Sci-Fi Starfighters</h3>
+            <p>Model 3D kendaraan luar angkasa dengan jumlah poligon rendah, optimal untuk game seluler atau PC. Tersedia dalam format FBX dan OBJ.</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 199.000</span>
+              <a href="#contact" class="btn-card">Pesan Sekarang <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Kreator di Balik Layar</span>
+        <h2 class="section-title">Karakter & Anggota Tim</h2>
+        <p class="section-desc">Mahasiswa Teknik Informatika Politeknik Negeri Semarang kelas Semester 4 yang berkolaborasi membangun Satugama dan Last Signal.</p>
+      </div>
+      
+      <div class="team-grid">
+        <!-- Member 1: Halima -->
+        <div class="team-card">
+          <span class="member-card-tag">LVL 4</span>
+          <div class="member-header">
+            <div class="member-avatar">H</div>
+            <div class="member-meta">
+              <h3>Halima Hadi Alfina</h3>
+              <div class="member-role">Game & Mechanical Designer</div>
+            </div>
+          </div>
+          <p class="member-desc">Bertanggung jawab merancang mekanisme interaksi gameplay yang seru dan memastikan pengalaman bermain yang unik di setiap proyek game.</p>
+          <div class="member-stats">
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Game Design</span>
+                <span class="stat-value">95%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Creativity</span>
+                <span class="stat-value">90%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 2: Eu Kharistia -->
+        <div class="team-card">
+          <span class="member-card-tag">LVL 4</span>
+          <div class="member-header">
+            <div class="member-avatar">E</div>
+            <div class="member-meta">
+              <h3>Eu Kharistia Banura</h3>
+              <div class="member-role">UI/UX & Visual Director</div>
+            </div>
+          </div>
+          <p class="member-desc">Merancang antarmuka permainan yang intuitif, tata letak web, serta mengarahkan estetika visual yang konsisten dan memukau.</p>
+          <div class="member-stats">
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">UI/UX Layout</span>
+                <span class="stat-value">92%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 92%;"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Color Theory</span>
+                <span class="stat-value">88%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 3: Madania -->
+        <div class="team-card">
+          <span class="member-card-tag">LVL 4</span>
+          <div class="member-header">
+            <div class="member-avatar">M</div>
+            <div class="member-meta">
+              <h3>Madania Aldanita</h3>
+              <div class="member-role">Lead Game Developer</div>
+            </div>
+          </div>
+          <p class="member-desc">Ahli dalam logika kode, mengintegrasikan sistem gameplay multi-pemain, serta menyusun arsitektur sistem pemrograman yang andal.</p>
+          <div class="member-stats">
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Programming</span>
+                <span class="stat-value">94%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 94%;"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Game Engine logic</span>
+                <span class="stat-value">91%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 91%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 4: Nurjihan -->
+        <div class="team-card">
+          <span class="member-card-tag">LVL 4</span>
+          <div class="member-header">
+            <div class="member-avatar">N</div>
+            <div class="member-meta">
+              <h3>Nurjihan Nabila M.</h3>
+              <div class="member-role">Lead Illustrator & Artist</div>
+            </div>
+          </div>
+          <p class="member-desc">Seniman di balik visual karakter, merancang ilustrasi konsep awal, aset seni piksel (pixel art), dan ilustrasi promosi Satugama.</p>
+          <div class="member-stats">
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Pixel Art & Sketch</span>
+                <span class="stat-value">96%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 96%;"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Character Design</span>
+                <span class="stat-value">93%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 93%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 5: Salmadinda -->
+        <div class="team-card">
+          <span class="member-card-tag">LVL 4</span>
+          <div class="member-header">
+            <div class="member-avatar">S</div>
+            <div class="member-meta">
+              <h3>Salmadinda Aishella</h3>
+              <div class="member-role">Project Manager / Producer</div>
+            </div>
+          </div>
+          <p class="member-desc">Mengoordinasikan tim, mengelola waktu rilis proyek, serta menyusun rencana bisnis (pitch deck) Technopreneurship untuk Satugama.</p>
+          <div class="member-stats">
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Management</span>
+                <span class="stat-value">90%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-info">
+                <span class="stat-name">Business Strategy</span>
+                <span class="stat-value">95%</span>
+              </div>
+              <div class="stat-bar-container">
+                <div class="stat-bar" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing / Business Model Section -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Skema Bisnis</span>
+        <h2 class="section-title">Pilihan Model Lisensi</h2>
+        <p class="section-desc">Pilih paket lisensi yang paling sesuai dengan skala proyek pengembangan game yang sedang Anda kerjakan.</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- Plan 1 -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Indie Pack</h3>
+            <p class="pricing-desc">Cocok untuk developer solo yang baru merintis game pertama.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">149k</span>
+            <span class="period">/ paket</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Akses penuh ke 1 paket aset terpilih</li>
+            <li>Format file lengkap (PNG/SVG/OBJ)</li>
+            <li>Lisensi komersial (1 Game)</li>
+            <li>Pembaruan gratis selamanya</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Pilih Paket</a>
+        </div>
+
+        <!-- Plan 2 (Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">POPULER</div>
+          <div class="pricing-header">
+            <h3>Pro Subscription</h3>
+            <p class="pricing-desc">Akses tak terbatas untuk tim studio game skala kecil-menengah.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Rp</span>
+            <span class="amount">299k</span>
+            <span class="period">/ bulan</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Akses ke seluruh pustaka aset Satugama</li>
+            <li>Kustomisasi tak terbatas di web editor</li>
+            <li>Lisensi komersial tanpa batas game</li>
+            <li>Akses prioritas aset baru setiap minggu</li>
+            <li>Dukungan teknis Discord 24/7</li>
+          </ul>
+          <a href="#contact" class="btn-cta">Berlangganan <i class="fa-solid fa-bolt"></i></a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Custom Commission</h3>
+            <p class="pricing-desc">Aset eksklusif yang dibuat khusus sesuai permintaan Anda.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">Mulai</span>
+            <span class="amount">500k</span>
+            <span class="period">/ request</span>
+          </div>
+          <ul class="pricing-features">
+            <li>100% aset eksklusif (tidak dijual kembali)</li>
+            <li>Pengerjaan langsung oleh artis ahli kami</li>
+            <li>Revisi hingga 3x pengerjaan</li>
+            <li>Hak cipta penuh milik Anda</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Request Quote Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Hubungi Kami</span>
+        <h2 class="section-title">Mulai Proyek Anda</h2>
+        <p class="section-desc">Punya pertanyaan mengenai lisensi, request aset custom, atau kerja sama? Isi formulir di bawah ini dan kami akan membalas dalam 24 jam.</p>
+      </div>
+      
+      <div class="contact-layout">
+        <!-- Contact details -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Kirim Email</h4>
+              <p><a href="mailto:satugamastudio@gmail.com">satugama.studio@gmail.com</a></p>
+              <p>Alternatif: <a href="mailto:halimahadi@student.polines.ac.id">halimahadi@student.polines.ac.id</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Lokasi Studio</h4>
+              <p>Jurusan Teknik Elektro, Gedung D3 Teknik Informatika</p>
+              <p>Politeknik Negeri Semarang, Jl. Prof. Sudarto, Tembalang, Semarang</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Repositori Reference</h4>
+              <p><a href="https://github.com/HalimaHadiAl/laggy-but-lucky.git" target="_blank">github.com/HalimaHadiAl/laggy-but-lucky</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <form id="quote-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="form-name">Nama Anda</label>
+                <input type="text" id="form-name" placeholder="Masukan nama lengkap" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" placeholder="nama@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="form-style">Gaya Desain Aset</label>
+                <select id="form-style">
+                  <option value="2d-pixel">2D Pixel Art</option>
+                  <option value="2d-vector">2D Vector Art</option>
+                  <option value="3d-lowpoly">3D Low-Poly Models</option>
+                  <option value="3d-stylized">3D Stylized Models</option>
+                  <option value="ui-sound">UI Design & Audio SFX</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-budget">Perkiraan Budget</label>
+                <select id="form-budget">
+                  <option value="under-500k">&lt; Rp 500.000</option>
+                  <option value="500k-2m">Rp 500.000 - Rp 2.000.000</option>
+                  <option value="2m-5m">Rp 2.000.000 - Rp 5.000.000</option>
+                  <option value="above-5m">&gt; Rp 5.000.000</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="form-message">Deskripsi Kebutuhan Game Aset Anda</label>
+                <textarea id="form-message" placeholder="Jelaskan jenis aset, jumlah, tema, dan tenggat waktu game Anda secara detail..." required></textarea>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn-cta btn-form">
+              Kirim Request Penawaran <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-message" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-layout">
+      <div class="footer-brand">
+        <a href="#home" class="logo" style="font-size: 1.5rem;">
+          <div class="logo-icon" style="width:32px; height:32px; font-size:1.25rem;">S</div>
+          SATU<span>GAMA</span>
+        </a>
+        <p>Platform pembuat game asset berkualitas tinggi untuk pengembang indie, didirikan di Semarang oleh tim inovator muda.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Mengapa Kami</a></li>
+          <li><a href="#customizer">Demo Customizer</a></li>
+          <li><a href="#projects">Katalog Karya</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Lisensi & Kebijakan</h4>
+        <ul>
+          <li><a href="#pricing">Rencana Harga</a></li>
+          <li><a href="#contact">Layanan Kustom</a></li>
+          <li><a href="https://github.com/HalimaHadiAl/laggy-but-lucky" target="_blank">Dokumentasi GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Satugama Studio. All rights reserved.</p>
+      <p>Dibuat untuk Tugas Technopreneurship - Politeknik Negeri Semarang</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
